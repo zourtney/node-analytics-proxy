@@ -1,0 +1,18 @@
+{
+  "name": "analytics",
+  "version": "0.0.0",
+  "description": "Proxy server that measures request-response time",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zourtney",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.4.8",
+    "http-proxy": "~1.0.2",
+    "nodemon": "~1.0.14",
+    "colors": "~0.6.2",
+    "mongoose": "~3.8.6"
+  }
+}
