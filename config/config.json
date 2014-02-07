@@ -1,0 +1,19 @@
+{
+    "proxyServer": {
+        "src": {
+            "port": 8000
+        },
+        "dest": {
+            "address": "http://localhost",
+            "port": "80"
+        }
+    },
+    "database": {
+        "connectionString": "mongodb://localhost/test"
+    },
+    "adminServer": {
+        "src": {
+            "port": 8001
+        }
+    }
+}
