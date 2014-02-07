@@ -25,7 +25,16 @@ proxy.on('response', function(res, duration) {
 //
 var mongoose = require('mongoose');
 require('../db');
+var Request = mongoose.model('Request');
 var Response = mongoose.model('Response');
+
+proxy.on('request', function(req, res) {
+    var model = new Request({
+        url: req.url,
+        method: req.method
+    });
+    model.save();
+});
 
 proxy.on('response', function(res, duration) {
     var model = new Response({
