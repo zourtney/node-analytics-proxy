@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-require('../db');
+require('../../db');
 var Request = mongoose.model('Request');
 var Response = mongoose.model('Response');
 
