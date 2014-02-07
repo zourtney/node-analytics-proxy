@@ -39,6 +39,7 @@ proxy.on('request', function(req, res) {
 proxy.on('response', function(res, duration) {
     var model = new Response({
         url: res.req.path,
+        method: res.req.method,
         statusCode: res.statusCode,
         recordedTime: Date.now(),
         responseTime: duration
